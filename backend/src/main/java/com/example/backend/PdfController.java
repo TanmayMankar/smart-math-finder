@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/pdf")
-@CrossOrigin(origins = "http://localhost:5173")
 public class PdfController {
 
     private final MathExtractionService mathExtractionService;
